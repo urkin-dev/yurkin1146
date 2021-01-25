@@ -1,5 +1,7 @@
 <div class="container">
+    <app-goods-addform (addProduct)="onAddProduct($event)"></app-goods-addform>
     <app-goods-table
         [goods] = "goods"
+        (deleteProduct)="deleteProductById($event)"
     ></app-goods-table>
 </div>

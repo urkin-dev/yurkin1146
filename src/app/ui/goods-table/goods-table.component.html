@@ -5,18 +5,18 @@
         <thead>
           <tr>
             <th scope="col" [style.width]="'100px'">Номер</th>
-            <th scope="col" [style.width]="'20%'">Наименование</th>
+            <th scope="col" [style.width]="'20%'">Наименование <button (click)="orderByTitle()" class="sort-btn"><i class="fa fa-fw fa-sort"></i></button></th>
             <th scope="col" [style.width]="'25%'">Количество</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let g of goods" [ngClass]="g.status ? 'bought' : 'sale'">
+          <tr *ngFor="let g of (goods | orderByTitle : ascOrder) | orderByStatus : 'status'" [ngClass]="g.status ? 'bought' : 'sale'">
             <th scope="row">{{ g.id }}</th>
             <td>{{ g.title }}</td>
             <td>{{ g.count }}</td>
             <td class="d-flex">
-              <button class="btn btn-outline-danger btn-sm mr-3">Удалить</button>
-              <button class="btn btn-outline-info btn-sm mr-3">Редактировать</button>
+              <button class="btn btn-outline-danger btn-sm mr-3" (click)="onDelete(g.id)">Удалить</button>
+              <button class="btn btn-outline-info btn-sm mr-3" (click)="onEdit(g.id)">Редактировать</button>
               <button class="btn btn-outline-info btn-sm" (click)="changeStatus(g.id)">
                 <span *ngIf="g.status">
                   Куплено

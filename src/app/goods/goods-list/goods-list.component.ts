@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/models/product.model';
+import { OrderByStatusPipe } from 'src/app/shared/pipes/order-by-status.pipe';
 import { GoodsService } from 'src/app/shared/services/goods.service';
 
 @Component({
@@ -25,6 +26,38 @@ export class GoodsListComponent implements OnInit {
       }
     } catch (e) {
       console.error(e);
+    }
+  }
+
+  async onAddProduct(product: Product): Promise<any> {
+    if (this.goods.length > 0) {
+      let maxId = 0;
+      this.goods.forEach(p => {
+        if (p.id !== undefined) {
+          if (p.id > maxId) {
+            maxId = p.id;
+          }
+        }
+      });
+
+      product.id = maxId + 1;
+    } else {
+      product.id = 0;
+    }
+
+    this.goodsService.postOne(product);
+
+    this.goods.push(product);
+    const statusFilter = new OrderByStatusPipe();
+    statusFilter.transform(this.goods, 'status');
+  }
+
+  async deleteProductById(id: number): Promise<any> {
+    const index = this.goods.findIndex((g) => g.id === id);
+
+    if (index !== -1) {
+      this.goods.splice(index, 1);
+      await this.goodsService.deleteOneById(id);
     }
   }
 

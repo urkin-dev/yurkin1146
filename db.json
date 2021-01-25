@@ -1,208 +1,54 @@
 {
   "goods": [
     {
-      "id": 0,
-      "title": "Amet labore enim.",
-      "count": 3,
-      "status": true
-    },
-    {
-      "id": 1,
-      "title": "Fugiat esse fugiat",
-      "count": 43,
-      "status": true
-    },
-    {
-      "id": 2,
-      "title": "Aute ipsum irure et ut veniam id sunt.",
-      "count": 13,
-      "status": true
-    },
-    {
-      "id": 3,
-      "title": "Consequat dolor non fugiat",
-      "count": 2,
-      "status": true
-    },
-    {
-      "id": 4,
-      "title": "Fugiat consectetur",
-      "count": 11,
-      "status": false
-    },
-    {
-      "id": 5,
-      "title": "Dolore dolor",
-      "count": 20,
-      "status": false
-    },
-    {
-      "id": 6,
-      "title": "Sunt commodo",
-      "count": 50,
-      "status": false
-    },
-    {
-      "id": 7,
-      "title": "Aliqua officia",
-      "count": 24,
-      "status": false
-    },
-    {
-      "id": 8,
-      "title": "Do nostrud",
+      "title": "Шоколад",
       "count": 17,
-      "status": false
+      "id": 8
     },
     {
-      "id": 9,
-      "title": "Et laboris",
+      "title": "Хлеб",
       "count": 25,
-      "status": false
-    },
-    {
-      "id": 10,
-      "title": "Exercitation irure",
-      "count": 50,
-      "status": false
-    },
-    {
-      "id": 11,
-      "title": "Mollit duis mollit",
-      "count": 16,
-      "status": true
-    },
-    {
       "id": 12,
-      "title": "Ullamco Lorem",
-      "count": 25,
-      "status": true
-    },
-    {
-      "id": 13,
-      "title": "Et mollit dolore",
-      "count": 25,
-      "status": true
-    },
-    {
-      "id": 14,
-      "title": "Laborum magna",
-      "count": 27,
-      "status": true
-    },
-    {
-      "id": 15,
-      "title": "Minim duis",
-      "count": 50,
       "status": false
     },
     {
-      "id": 16,
-      "title": "Pariatur cillum",
-      "count": 46,
-      "status": true
-    },
-    {
-      "id": 17,
-      "title": "Nisi ullamco",
-      "count": 6,
-      "status": false
-    },
-    {
-      "id": 18,
-      "title": "Sint duis nisi",
+      "title": "Молоко",
       "count": 34,
-      "status": true
+      "id": 18
     },
     {
-      "id": 19,
-      "title": "Magna ad incididunt",
-      "count": 17,
-      "status": false
-    },
-    {
-      "id": 20,
-      "title": "Nostrud et",
-      "count": 49,
-      "status": true
-    },
-    {
-      "id": 21,
-      "title": "Dolor officia",
-      "count": 1,
-      "status": true
-    },
-    {
-      "id": 22,
-      "title": "Dolor commodo",
-      "count": 19,
-      "status": false
-    },
-    {
-      "id": 23,
-      "title": "Ad adipisicing",
+      "title": "Апельсины",
       "count": 23,
-      "status": false
-    },
-    {
-      "id": 24,
-      "title": "Nostrud culpa",
-      "count": 8,
-      "status": false
-    },
-    {
-      "id": 25,
-      "title": "Voluptate consectetur",
-      "count": 19,
+      "id": 23,
       "status": true
     },
     {
-      "id": 26,
-      "title": "Anim ex proident",
+      "title": "Мандарины",
       "count": 45,
-      "status": true
+      "id": 26
     },
     {
-      "id": 27,
-      "title": "Est mollit adipisicing",
-      "count": 30,
-      "status": false
+      "title": "Картошка",
+      "count": "457",
+      "id": 34
     },
     {
-      "id": 28,
-      "title": "Dolore ipsum",
-      "count": 11,
-      "status": true
+      "title": "Яблоки",
+      "count": 123,
+      "status": false,
+      "id": 36
     },
     {
-      "id": 29,
-      "title": "Incididunt anim",
-      "count": 8,
-      "status": true
+      "title": "Ананасы",
+      "count": 1,
+      "status": true,
+      "id": 37
     },
     {
-      "id": 30,
-      "title": "Sit sunt laboris",
-      "count": 25,
-      "status": false
-    },
-    {
-      "id": 31,
-      "title": "Dolore ipsum",
-      "count": 11,
-      "status": true
-    },
-    {
-      "id": 32,
-      "title": "Incididunt anim",
-      "count": 8,
-      "status": true
-    },
-    {
-      "id": 33,
-      "title": "Sit sunt laboris",
-      "count": 25,
-      "status": false
+      "title": "Бананы",
+      "count": 12,
+      "status": true,
+      "id": 38
     }
   ]
 }
