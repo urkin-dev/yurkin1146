@@ -3,18 +3,20 @@
     {
       "title": "Шоколад",
       "count": 17,
+      "status": false,
       "id": 8
     },
     {
       "title": "Хлеб",
       "count": 25,
-      "id": 12,
-      "status": false
+      "status": true,
+      "id": 12
     },
     {
       "title": "Молоко",
       "count": 34,
-      "id": 18
+      "id": 18,
+      "status": true
     },
     {
       "title": "Апельсины",
@@ -25,30 +27,50 @@
     {
       "title": "Мандарины",
       "count": 45,
-      "id": 26
+      "id": 26,
+      "status": false
     },
     {
       "title": "Картошка",
       "count": "457",
-      "id": 34
+      "id": 34,
+      "status": true
     },
     {
       "title": "Яблоки",
       "count": 123,
-      "status": false,
+      "status": true,
       "id": 36
     },
     {
       "title": "Ананасы",
       "count": 1,
-      "status": true,
+      "status": false,
       "id": 37
     },
     {
       "title": "Бананы",
       "count": 12,
-      "status": true,
+      "status": false,
       "id": 38
+    },
+    {
+      "title": "Черный хлеб",
+      "count": 23,
+      "status": false,
+      "id": 39
+    },
+    {
+      "title": "Булочки",
+      "count": 23,
+      "status": false,
+      "id": 40
+    },
+    {
+      "title": "Сникерс",
+      "count": 23,
+      "status": false,
+      "id": 41
     }
   ]
 }

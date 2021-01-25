@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/models/product.model';
-import { OrderByStatusPipe } from 'src/app/shared/pipes/order-by-status.pipe';
+import { OrderByPipe } from 'src/app/shared/pipes/order-by.pipe';
 import { GoodsService } from 'src/app/shared/services/goods.service';
 
 @Component({
@@ -48,8 +48,8 @@ export class GoodsListComponent implements OnInit {
     this.goodsService.postOne(product);
 
     this.goods.push(product);
-    const statusFilter = new OrderByStatusPipe();
-    statusFilter.transform(this.goods, 'status');
+    const orderGoods = new OrderByPipe();
+    orderGoods.transform(this.goods, false);
   }
 
   async deleteProductById(id: number): Promise<any> {

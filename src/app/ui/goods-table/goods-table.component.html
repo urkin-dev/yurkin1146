@@ -10,7 +10,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let g of (goods | orderByTitle : ascOrder) | orderByStatus : 'status'" [ngClass]="g.status ? 'bought' : 'sale'">
+          <tr *ngFor="let g of goods | orderBy : ascOrder" [ngClass]="g.status ? 'bought' : 'sale'">
             <th scope="row">{{ g.id }}</th>
             <td>{{ g.title }}</td>
             <td>{{ g.count }}</td>

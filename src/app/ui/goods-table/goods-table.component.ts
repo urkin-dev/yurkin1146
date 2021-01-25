@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from 'src/app/shared/models/product.model';
-import { OrderByStatusPipe } from 'src/app/shared/pipes/order-by-status.pipe';
+import { OrderByPipe } from 'src/app/shared/pipes/order-by.pipe';
 import { GoodsService } from 'src/app/shared/services/goods.service';
 
 @Component({
@@ -16,6 +16,7 @@ export class GoodsTableComponent implements OnInit {
   @Input() goods: Product[] = [];
 
   @Output() deleteProduct = new EventEmitter<number>();
+  @Output() order = this.ascOrder;
 
   constructor(private goodsService: GoodsService, private router: Router) { }
 
@@ -29,8 +30,8 @@ export class GoodsTableComponent implements OnInit {
       const product = this.goods[index];
       product.status = !product.status;
       this.goodsService.putOneById(id, product);
-      const statusFilter = new OrderByStatusPipe();
-      statusFilter.transform(this.goods, 'status');
+      const orderGoods = new OrderByPipe();
+      orderGoods.transform(this.goods, this.ascOrder);
     }
   }
 

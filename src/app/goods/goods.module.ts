@@ -8,8 +8,7 @@ import { GoodsEditComponent } from './goods-edit/goods-edit.component';
 import { GoodsTableComponent } from '../ui/goods-table/goods-table.component';
 import { GoodsAddformComponent } from '../ui/goods-addform/goods-addform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { OrderByStatusPipe } from '../shared/pipes/order-by-status.pipe';
-import { OrderByTitlePipe } from '../shared/pipes/order-by-title.pipe';
+import { OrderByPipe } from '../shared/pipes/order-by.pipe';
 
 
 @NgModule({
@@ -19,8 +18,7 @@ import { OrderByTitlePipe } from '../shared/pipes/order-by-title.pipe';
     GoodsEditComponent,
     GoodsTableComponent,
     GoodsAddformComponent,
-    OrderByStatusPipe,
-    OrderByTitlePipe
+    OrderByPipe
   ],
   imports: [
     CommonModule,

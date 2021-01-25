@@ -2,12 +2,11 @@ import {
   Pipe,
   PipeTransform
 } from '@angular/core';
-import { OrderByStatusPipe } from './order-by-status.pipe';
 
 @Pipe({
-  name: 'orderByTitle'
+  name: 'orderBy'
 })
-export class OrderByTitlePipe implements PipeTransform {
+export class OrderByPipe implements PipeTransform {
 
   transform(goods: any[], ascOrder: boolean): any[] {
     let order: number;
@@ -22,8 +21,9 @@ export class OrderByTitlePipe implements PipeTransform {
       return 0;
     });
 
-    const statusFilter = new OrderByStatusPipe();
-    statusFilter.transform(goods, 'status');
+    goods.sort((a, b) => {
+      return a.status - b.status;
+    });
 
     return goods;
   }
