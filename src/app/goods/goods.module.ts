@@ -10,7 +10,6 @@ import { GoodsAddformComponent } from '../ui/goods-addform/goods-addform.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderByPipe } from '../shared/pipes/order-by.pipe';
 
-
 @NgModule({
   declarations: [
     GoodsListComponent,
@@ -24,7 +23,7 @@ import { OrderByPipe } from '../shared/pipes/order-by.pipe';
     CommonModule,
     GoodsRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class GoodsModule { }

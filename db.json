@@ -39,7 +39,7 @@
     {
       "title": "Яблоки",
       "count": 123,
-      "status": true,
+      "status": false,
       "id": 36
     },
     {
@@ -57,7 +57,7 @@
     {
       "title": "Черный хлеб",
       "count": 23,
-      "status": false,
+      "status": true,
       "id": 39
     },
     {

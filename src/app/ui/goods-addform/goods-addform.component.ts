@@ -25,8 +25,7 @@ export class GoodsAddformComponent implements OnInit {
       ]),
       count: new FormControl({ value: '', disabled: this.disabledForms }, [
         Validators.required,
-        // Validators.pattern('^[1-9]\d*$')
-        // TODO: Fix it
+        Validators.min(1)
       ])
     });
   }

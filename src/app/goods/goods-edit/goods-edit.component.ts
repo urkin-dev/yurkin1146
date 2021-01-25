@@ -31,7 +31,8 @@ export class GoodsEditComponent implements OnInit {
         Validators.required
       ]),
       count: new FormControl(null, [
-        Validators.required
+        Validators.required,
+        Validators.min(1)
       ]),
       status: new FormControl(null, [
         Validators.required
